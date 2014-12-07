@@ -5,6 +5,8 @@ A easy-to-use Jenkins dashboard that provides some visibility on job statuses. I
 
 ![Example Dashboard](https://raw.githubusercontent.com/arcturial/jenkins-dash/master/example.jpg "Example Dashboard")
 
+This example was generated off the publis [NodeJS Jenkins server](http://jenkins.nodejs.org)
+
 ## Usage
 
 First you need to modify the `config.js` file to include the path of the Jenkins servers you want to monitor (you can include multiple).
