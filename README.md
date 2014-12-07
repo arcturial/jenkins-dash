@@ -3,7 +3,7 @@ Jenkins Overview Dashboard
 
 A easy-to-use Jenkins dashboard that provides some visibility on job statuses. Ideal for TV dashboards you can put up in the office.
 
-![Example Dashboard](https://github.com/arcturial/jenkins-dash/example.jpg "Example Dashboard")
+![Example Dashboard](https://raw.githubusercontent.com/arcturial/jenkins-dash/master/example.jpg "Example Dashboard")
 
 ## Usage
 
