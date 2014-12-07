@@ -49,7 +49,9 @@ app.get('/data', function (req, res) {
 
     for (var key in hosts) {
         var jenkins = hosts[key];
-        request("http://" + jenkins.host + ":" + jenkins.port + "/api/json?" + query, read);
+        var protocol = jenkins.secure ? 'https' : 'http';
+
+        request(protocol + "://" + jenkins.host + ":" + jenkins.port + "/api/json?" + query, read);
     }
 });
 
