@@ -1,7 +1,7 @@
 Jenkins Overview Dashboard
 ============
 
-A easy-to-use Jenkins dashboard that provides some visibility on job statuses. Ideal for TV dashboards you can put up in the office.
+A easy-to-use [Jenkins](http://jenkins-ci.org/) dashboard that provides some visibility on job statuses. Ideal for TV dashboards you can put up in the office.
 
 ![Example Dashboard](https://raw.githubusercontent.com/arcturial/jenkins-dash/master/example.jpg "Example Dashboard")
 
@@ -11,9 +11,9 @@ It keeps a "top 8" view of all Jobs in the queue and changes their priority base
 
 ## Usage
 
-First you need to modify the `config.js` file to include the path of the Jenkins servers you want to monitor (you can include multiple).
-
-Once you have modified this file, you can start the server by running `npm start` and then redirecting your browser to the hosted location.
+1. Run `npm install` to install any required dependencies.
+2. Modify the `config.js` file to include the Jenkins servers you want to monitor.
+3. Start the application by running `npm start`
 
 ## Making modifications
 
