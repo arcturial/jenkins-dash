@@ -5,7 +5,9 @@ A easy-to-use Jenkins dashboard that provides some visibility on job statuses. I
 
 ![Example Dashboard](https://raw.githubusercontent.com/arcturial/jenkins-dash/master/example.jpg "Example Dashboard")
 
-This example was generated off the publis [NodeJS Jenkins server](http://jenkins.nodejs.org)
+This example was generated off the public [NodeJS Jenkins server](http://jenkins.nodejs.org).
+
+It keeps a "top 8" view of all Jobs in the queue and changes their priority based on their status and current progress.
 
 ## Usage
 
@@ -15,4 +17,4 @@ Once you have modified this file, you can start the server by running `npm start
 
 ## Making modifications
 
-The dashboard uses gulp to manage assets and templates, any modification you make you need to change in the `asset` directory. In order for the assets to be compiled, you can run `gulp` or `node_modules/gulp/bin/gulp.js`. The default `gulp` command includes a `watch` operation that will compile any assets if a file in the `asset` folder changes.
+The dashboard uses [Gulp.js](http://gulpjs.com/) to manage assets and templates, any modification you make you need to change in the `asset` directory. In order for the assets to be compiled, you can run `gulp` or `node_modules/gulp/bin/gulp.js`. The default `gulp` command includes a `watch` operation that will compile any assets if a file in the `asset` folder changes.
