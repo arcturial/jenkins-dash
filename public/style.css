@@ -1,0 +1,156 @@
+.anim-spin {
+  -webkit-animation: spin 2s infinite;
+  animation: spin 2s infinite;
+}
+.anim-fade {
+  -webkit-animation: fade 2s infinite;
+  animation: fade 2s infinite;
+}
+body {
+  font-family: "Roboto", Arial !important;
+  width: 100%;
+  height: 100%;
+  background-color: #242f35;
+}
+.builds {
+  padding: 30px;
+  position: relative;
+  width: 70%;
+  margin: 0px auto;
+}
+.builds h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #c9dee3;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+.loading {
+  position: absolute;
+  margin-left: 20px;
+  display: none;
+  top: 40px;
+  right: 40px;
+  color: #c9dee3;
+}
+.loading i {
+  -webkit-animation: spin 2s infinite;
+  animation: spin 2s infinite;
+  font-size: 26px;
+}
+.loading.visible {
+  display: inline-block;
+}
+.message {
+  text-align: center;
+  color: #42555e;
+  font-size: 18px;
+}
+.message span {
+  color: #c9dee3;
+}
+.job {
+  background-color: #37474f;
+  padding: 0px;
+  margin-right: -5px;
+  margin-bottom: 25px;
+  line-height: 70px;
+  padding-left: 15px;
+}
+.job * {
+  vertical-align: middle;
+}
+.job .bn {
+  color: #182024;
+  font-size: 26px;
+  margin-left: 15px;
+}
+.job .bp {
+  color: #242f35;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.job .bt {
+  font-size: 26px;
+  color: #80cbc4;
+}
+.job .profile {
+  float: left;
+  width: 65px;
+  border-radius: 0px;
+  background-color: #2e3c42;
+  border: none;
+  padding: 4px;
+  margin: 3px;
+  margin-right: 4px;
+}
+.job .status {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 5px;
+  border-radius: 9999px;
+}
+.job .status.red,
+.job .status.red_anime {
+  background-color: #ec4a4a;
+}
+.job .status.blue,
+.job .status.blue_anime {
+  background-color: #3eda87;
+}
+.job .status.grey,
+.job .status.grey_anime,
+.job .status.disabled,
+.job .status.disabled_anime,
+.job .status.aborted,
+.job .status.aborted_anime {
+  background-color: #cccccc;
+}
+.job .status.blue_anime,
+.job .status.red_anime,
+.job .status.grey_anime,
+.job .status.disabled_anime,
+.job .status.aborted_anime {
+  -webkit-animation: fade 2s infinite;
+  animation: fade 2s infinite;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

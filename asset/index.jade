@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(name="viewport", content="initial-scale=1")
+        title Jenkins Dashboard
+
+        link(href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+        link(href="http://fonts.googleapis.com/css?family=Roboto", rel="stylesheet", type="text/css")
+        link(href="style.css", rel="stylesheet", type="text/css")
+
+    body
+        div.container-fluid
+            div.row
+                div.builds
+                    span.loading(data-bind='css: {visible: app.loading }')
+                        i.glyphicon.glyphicon-refresh
+
+                    h2 Jenkins Jobs
+
+                    div.row
+                        div.job-cont(data-bind="foreach: app.jobs")
+                            div.job.clearfix
+                                span.status(data-bind="css: color")
+                                span.bt(data-bind="text: name")
+                                span.bn(data-bind="text: '#' + build.number")
+                                span.bp(data-bind="text: host")
+
+                                <!-- ko foreach: users -->
+                                img.img-thumbnail.profile.pull-right(data-bind="attr: { src: gravatar, title: name }")
+                                <!-- /ko -->
+
+                        div.message.
+                            showing latest <span data-bind="text: app.showing"></span> out of <span data-bind="text: app.total"></span> builds
+
+    script(src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js", type="text/javascript")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js", type="text/javascript")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js", type="text/javascript")
+    script(src="script.js", type="text/javascript")
+

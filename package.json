@@ -1,0 +1,23 @@
+{
+    "name": "jenkins-dash",
+    "version": "0.0.1",
+    "bin": {
+        "jenkins-dash": "./src/app.js"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "stop": "killall app.js"
+    },
+    "dependencies": {
+        "express": "*",
+        "request": "*",
+        "extend": "*"
+    },
+    "devDependencies": {
+        "gulp": "*",
+        "gulp-uglify": "*",
+        "gulp-jade": "*",
+        "gulp-less": "*",
+        "gulp-uglify": "*"
+    }
+}
